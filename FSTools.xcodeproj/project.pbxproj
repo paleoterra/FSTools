@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41107311D222B2500244094 /* XPEarthFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41107301D222B2500244094 /* XPEarthFix.swift */; };
+		B41107331D222B4B00244094 /* XPEarthFixTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41107321D222B4B00244094 /* XPEarthFixTest.swift */; };
+		B41107351D22CCE300244094 /* earth_fix_example.dat in Resources */ = {isa = PBXBuildFile; fileRef = B41107341D22CCE300244094 /* earth_fix_example.dat */; };
 		B48F84731D208CC500E46CA9 /* FSTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B48F84721D208CC500E46CA9 /* FSTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B48F847A1D208CC500E46CA9 /* FSTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F846F1D208CC500E46CA9 /* FSTools.framework */; };
 		B48F847F1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F847E1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B41107301D222B2500244094 /* XPEarthFix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPEarthFix.swift; sourceTree = "<group>"; };
+		B41107321D222B4B00244094 /* XPEarthFixTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPEarthFixTest.swift; sourceTree = "<group>"; };
+		B41107341D22CCE300244094 /* earth_fix_example.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = earth_fix_example.dat; sourceTree = "<group>"; };
 		B48F846F1D208CC500E46CA9 /* FSTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48F84721D208CC500E46CA9 /* FSTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSTools.h; sourceTree = "<group>"; };
 		B48F84741D208CC500E46CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 				B48F84721D208CC500E46CA9 /* FSTools.h */,
 				B48F84741D208CC500E46CA9 /* Info.plist */,
 				B48F84901D20D42200E46CA9 /* FMSFiles.swift */,
+				B41107301D222B2500244094 /* XPEarthFix.swift */,
 			);
 			path = FSTools;
 			sourceTree = "<group>";
@@ -92,6 +99,7 @@
 				B48F84891D20D25100E46CA9 /* testfiles */,
 				B48F847E1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift */,
 				B48F84801D208CC500E46CA9 /* Info.plist */,
+				B41107321D222B4B00244094 /* XPEarthFixTest.swift */,
 			);
 			path = FSToolsTests;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 		B48F84891D20D25100E46CA9 /* testfiles */ = {
 			isa = PBXGroup;
 			children = (
+				B41107341D22CCE300244094 /* earth_fix_example.dat */,
 				B48F848C1D20D27900E46CA9 /* CAX9010.fms */,
 				B48F848D1D20D27900E46CA9 /* cax9011.fms */,
 				B48F848A1D20D26100E46CA9 /* test.fms */,
@@ -212,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48F848F1D20D27900E46CA9 /* cax9011.fms in Resources */,
+				B41107351D22CCE300244094 /* earth_fix_example.dat in Resources */,
 				B48F848B1D20D26100E46CA9 /* test.fms in Resources */,
 				B48F848E1D20D27900E46CA9 /* CAX9010.fms in Resources */,
 			);
@@ -224,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41107311D222B2500244094 /* XPEarthFix.swift in Sources */,
 				B48F84911D20D42200E46CA9 /* FMSFiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41107331D222B4B00244094 /* XPEarthFixTest.swift in Sources */,
 				B48F847F1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +435,7 @@
 				B48F84851D208CC500E46CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B48F84861D208CC500E46CA9 /* Build configuration list for PBXNativeTarget "FSToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +444,7 @@
 				B48F84881D208CC500E46CA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
