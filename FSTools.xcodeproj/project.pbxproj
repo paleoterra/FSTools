@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		B48F84731D208CC500E46CA9 /* FSTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B48F84721D208CC500E46CA9 /* FSTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B48F847A1D208CC500E46CA9 /* FSTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F846F1D208CC500E46CA9 /* FSTools.framework */; };
-		B48F847F1D208CC500E46CA9 /* FSToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F847E1D208CC500E46CA9 /* FSToolsTests.swift */; };
+		B48F847F1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F847E1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift */; };
+		B48F848B1D20D26100E46CA9 /* test.fms in Resources */ = {isa = PBXBuildFile; fileRef = B48F848A1D20D26100E46CA9 /* test.fms */; };
+		B48F848E1D20D27900E46CA9 /* CAX9010.fms in Resources */ = {isa = PBXBuildFile; fileRef = B48F848C1D20D27900E46CA9 /* CAX9010.fms */; };
+		B48F848F1D20D27900E46CA9 /* cax9011.fms in Resources */ = {isa = PBXBuildFile; fileRef = B48F848D1D20D27900E46CA9 /* cax9011.fms */; };
+		B48F84911D20D42200E46CA9 /* FMSFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F84901D20D42200E46CA9 /* FMSFiles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +31,12 @@
 		B48F84721D208CC500E46CA9 /* FSTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSTools.h; sourceTree = "<group>"; };
 		B48F84741D208CC500E46CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48F84791D208CC500E46CA9 /* FSToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B48F847E1D208CC500E46CA9 /* FSToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSToolsTests.swift; sourceTree = "<group>"; };
+		B48F847E1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSToolsFMSReaderTests.swift; sourceTree = "<group>"; };
 		B48F84801D208CC500E46CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48F848A1D20D26100E46CA9 /* test.fms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.fms; sourceTree = "<group>"; };
+		B48F848C1D20D27900E46CA9 /* CAX9010.fms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CAX9010.fms; sourceTree = "<group>"; };
+		B48F848D1D20D27900E46CA9 /* cax9011.fms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cax9011.fms; sourceTree = "<group>"; };
+		B48F84901D20D42200E46CA9 /* FMSFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSFiles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 			children = (
 				B48F84721D208CC500E46CA9 /* FSTools.h */,
 				B48F84741D208CC500E46CA9 /* Info.plist */,
+				B48F84901D20D42200E46CA9 /* FMSFiles.swift */,
 			);
 			path = FSTools;
 			sourceTree = "<group>";
@@ -80,10 +89,21 @@
 		B48F847D1D208CC500E46CA9 /* FSToolsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B48F847E1D208CC500E46CA9 /* FSToolsTests.swift */,
+				B48F84891D20D25100E46CA9 /* testfiles */,
+				B48F847E1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift */,
 				B48F84801D208CC500E46CA9 /* Info.plist */,
 			);
 			path = FSToolsTests;
+			sourceTree = "<group>";
+		};
+		B48F84891D20D25100E46CA9 /* testfiles */ = {
+			isa = PBXGroup;
+			children = (
+				B48F848C1D20D27900E46CA9 /* CAX9010.fms */,
+				B48F848D1D20D27900E46CA9 /* cax9011.fms */,
+				B48F848A1D20D26100E46CA9 /* test.fms */,
+			);
+			name = testfiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +170,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = Y5R65N2GLX;
 						DevelopmentTeamName = "Thomas Moore";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					B48F84781D208CC500E46CA9 = {
@@ -190,6 +211,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48F848F1D20D27900E46CA9 /* cax9011.fms in Resources */,
+				B48F848B1D20D26100E46CA9 /* test.fms in Resources */,
+				B48F848E1D20D27900E46CA9 /* CAX9010.fms in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48F84911D20D42200E46CA9 /* FMSFiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48F847F1D208CC500E46CA9 /* FSToolsTests.swift in Sources */,
+				B48F847F1D208CC500E46CA9 /* FSToolsFMSReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +342,7 @@
 		B48F84841D208CC500E46CA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -329,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PaleoTerra.FSTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -336,6 +363,7 @@
 		B48F84851D208CC500E46CA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
